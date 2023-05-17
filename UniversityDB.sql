@@ -3,14 +3,14 @@ use University
 
 create table Students (
 	Id int primary key identity,
-	Firstname nvarchar(20) not null,
-	Lastname nvarchar(20) not null
+	Firstname nvarchar(40) not null,
+	Lastname nvarchar(40) not null
 )
 
 create table Teachers (
 	Id int primary key identity,
-	Firstname nvarchar(20) not null,
-	Lastname nvarchar(20) not null
+	Firstname nvarchar(40) not null,
+	Lastname nvarchar(40) not null
 )
 
 create table TeacherStudents (
@@ -21,17 +21,17 @@ create table TeacherStudents (
 
 create table Groups (
 	Id int primary key identity,
-	Name nvarchar(20) not null
+	Name nvarchar(40) not null
 )
 
 create table Departments (
 	Id int primary key identity,
-	Name nvarchar(20) not null
+	Name nvarchar(40) not null
 )
 
 create table Subjects (
 	Id int primary key identity,
-	Name nvarchar(20) not null
+	Name nvarchar(40) not null
 )
 
 create table TeacherGroups (
